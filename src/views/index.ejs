@@ -1,0 +1,65 @@
+<html lang="pt-br">
+
+<head>
+    <%- include('head-initial') %>
+</head>
+
+<body>
+
+    <main class="container">
+        <section id="presentation">
+            <div class="logo">
+                <p>Group Finder <span>UFABC</span></p>
+            </div>
+
+            <div class="group-hangout">
+                <img src="/img/group-hangout.svg" alt="">
+            </div>
+        </section>
+
+        <section id="get-in-app">
+            <h2>Sign up</h2>
+            <p>Encontre um grupo para suas atividades acadêmicas</p>
+
+            <form action="" id="form-signup">
+                <div class="input-group">
+                    <label for="name" class="sr-only">Nome</label>
+                    <input type="text" name="" id="name" placeholder="Nome">
+                </div>
+
+                <div class="input-group">
+                    <label for="email" class="sr-only">E-mail</label>
+                    <input type="email" name="" id="email" placeholder="E-mail">
+                </div>
+
+                <div class="input-group">
+                    <label for="ra" class="sr-only">Usuário</label>
+                    <input type="text" name="" id="ra" placeholder="RA">
+                </div>
+
+                <div class="input-group">
+                    <label for="password" class="sr-only">Senha</label>
+                    <input type="password" name="" id="password" placeholder="Senha">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password" class="sr-only">Confirmar senha</label>
+                    <input type="password" name="" id="confirm-password" placeholder="Confirmar senha">
+                </div>
+
+                <div class="input-group">
+                    <button type="submit" id="sign-up-button">Sign up</button>
+                </div>
+            </form>
+
+            <hr>
+
+            <p>Já tem uma conta? <a href="/login">Log in</a></p>
+        </section>
+    </main>
+
+    <script src="/js/sent-form-signup.js"></script>
+
+</body>
+
+</html>

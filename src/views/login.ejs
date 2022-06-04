@@ -1,0 +1,50 @@
+<html lang="pt-br">
+
+<head>
+    <%- include('head-initial') %>
+</head>
+
+<body>
+
+    <main class="container">
+        <section id="presentation">
+            <div class="logo">
+                <p>Group Finder <span>UFABC</span></p>
+            </div>
+
+            <div class="group-hangout">
+                <img src="/img/group-hangout.svg" alt="">
+            </div>
+        </section>
+
+        <section id="get-in-app">
+            <h2>Log in</h2>
+            <p>Encontre um grupo para suas atividades acadêmicas</p>
+
+            <form action="" id="form-signin">
+                <div class="input-group">
+                    <label for="user" class="sr-only">Usuário</label>
+                    <input type="text" name="" id="user" placeholder="Usuário">
+                </div>
+
+                <div class="input-group">
+                    <label for="password" class="sr-only">Senha</label>
+                    <input type="password" name="" id="password" placeholder="Senha">
+                </div>
+
+                <div class="input-group">
+                    <button type="submit" id="log-in-button">Log in</button>
+                </div>
+            </form>
+
+            <hr>
+
+            <p>Não é cadastrado? <a href="/">Sign up</a></p>
+        </section>
+    </main>
+
+    <script src="/js/sent-form-signin.js"></script>
+
+</body>
+
+</html>

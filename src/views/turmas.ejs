@@ -1,0 +1,47 @@
+<html lang="pt-br">
+
+<head>
+    <%- include('head') %>
+</head>
+
+<body>
+
+    <%- include('header') %>
+
+        <%- include('aside') %>
+
+            <main>
+                <div class="classes-list">
+                    <table id="class-table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nome</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <% turmas.forEach(function(turma) { %>
+                                <tr class="disciplina">
+                                    <td class="disciplina-codigo">
+                                        <%- turma._id %>
+                                    </td>
+                                    <td class="disciplina-nome">
+                                        <%- turma.disciplina %>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                        </tbody>
+                    </table>
+                </div>
+
+            </main>
+            </div>
+
+            <script src="/js/click-disciplina.js"></script>
+
+            <script src="/js/script.js"></script>
+
+</body>
+
+</html>
